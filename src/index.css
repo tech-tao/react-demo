@@ -17,6 +17,12 @@ ol, ul {
   margin-bottom: 10px;
 }
 
+@font-face {
+	font-family: 'Chess7';
+	src: url('/Chess7/Chess7.eot');
+	src: local('/Chess7/Chess7'), url('/Chess7/Chess7.woff') format('woff'), url('/Chess7/Chess7.ttf') format('truetype');
+}
+
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -30,6 +36,7 @@ ol, ul {
   padding: 0;
   text-align: center;
   width: 34px;
+  font-family: Chess7;
 }
 
 .square:focus {

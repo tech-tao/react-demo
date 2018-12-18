@@ -69,7 +69,7 @@ class Game extends React.Component {
         if (calculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        squares[i] = this.state.xIsNext ? 'o' : 'p'; // o and p are black and white pawns in webfont Chess7
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -146,7 +146,7 @@ class Game extends React.Component {
         } else if (this.state.stepNumber > 8) {
             status = 'Game is draw.'
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next player: ' + (this.state.xIsNext ? 'o' : 'p');
         }
 
         return (
