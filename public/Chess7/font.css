@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Chess7';
+	src: url('./Chess7.eot');
+	src: local('Chess7'), url('./Chess7.woff') format('woff'), url('./Chess7.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_587">Text with this font applied</p> */
+.fontsforweb_fontid_587 {
+	font-family: 'Chess7' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
