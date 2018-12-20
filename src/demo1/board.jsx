@@ -9,7 +9,7 @@ export default class Board extends React.Component {
         let className = "";
         if (winnerResult) {
             if (i === winnerResult.a || i === winnerResult.b || i === winnerResult.c) {
-                className = "highlight";
+                className = " highlight";
             }
         }
         return (
