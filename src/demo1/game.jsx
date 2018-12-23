@@ -25,7 +25,7 @@ export default class Game extends React.Component {
         if (CalculateWinner(squares) || squares[i]) {
             return;
         }
-        squares[i] = this.state.xIsNext ? 'X' : 'O';
+        squares[i] = this.state.xIsNext ? 'o' : 'p';
         this.setState({
             history: history.concat([{
                 squares: squares,
@@ -102,7 +102,7 @@ export default class Game extends React.Component {
         } else if (this.state.stepNumber > 8) {
             status = 'Game is draw.'
         } else {
-            status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+            status = 'Next player: ' + (this.state.xIsNext ? 'o' : 'p');
         }
 
         return (
